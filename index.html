@@ -1,0 +1,691 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Bryce | Our Little MVP</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+
+<!-- =====================================================
+     OPENING INVITATION
+===================================================== -->
+
+<div id="opening-screen">
+
+    <div class="court-lines"></div>
+
+    <div class="opening-content">
+
+        <p class="small-title">YOU'RE INVITED TO</p>
+
+        <h1>BRYCE</h1>
+
+        <h2>BIG DAY</h2>
+
+        <div class="basketball-wrapper">
+            <button id="openInvitation" class="basketball" aria-label="Open invitation">
+                <span class="ball-number">26</span>
+            </button>
+
+            <p class="tap-text">TAP THE BALL TO OPEN</p>
+        </div>
+
+        <p class="opening-date">
+            OCTOBER 24, 2026
+        </p>
+
+    </div>
+</div>
+
+
+<!-- =====================================================
+     MAIN INVITATION
+===================================================== -->
+
+<main id="invitation">
+
+    <!-- Floating basketballs created by JS -->
+    <div id="basketballEffects"></div>
+
+
+    <!-- =================================================
+         HERO / OUR LITTLE MVP
+    ================================================== -->
+
+    <section class="portrait-section hero-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">BIRTHDAY & CHRISTENING OF</p>
+
+        <h1 class="main-title">
+            BRYCE WILBUR
+        </h1>
+
+        <h2 class="subtitle">
+            OUR LITTLE MVP
+        </h2>
+
+
+        <!-- =================================================
+             PUT BRYCE'S MAIN PORTRAIT IMAGE HERE
+             
+             Replace:
+             images/bryce-main.jpg
+             
+             with your actual image filename.
+        ================================================== -->
+
+        <div class="mvp-photo">
+            <img
+                src="baby-main.jpg.png"
+                alt="Bryce - Our Little MVP"
+            >
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         MARK YOUR CALENDAR / GAME DAY
+    ================================================== -->
+
+    <section class="portrait-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">MARK YOUR CALENDAR</p>
+
+        <h2 class="section-title">
+            GAME DAY
+        </h2>
+
+
+        <div class="event-card">
+
+            <div class="event-row">
+                <span class="event-icon">📅</span>
+
+                <div>
+                    <small>DATE</small>
+                    <strong>OCTOBER 24, 2026</strong>
+                </div>
+            </div>
+
+
+            <div class="event-row">
+                <span class="event-icon">⏰</span>
+
+                <div>
+                    <small>TIME</small>
+                    <strong>11:00 AM FOR GUESS</strong>
+                    <strong>9:00 AM FOR GODPARENTS</strong>
+                </div>
+            </div>
+
+
+            <div class="event-row">
+                <span class="event-icon">⛪</span>
+
+                <div>
+                    <small>CHRISTENING CHURCH</small>
+
+                    <strong>
+                        San Nicolas de Tolentino Parish
+                    </strong>
+
+                    <span>
+                        Castillejos, Zambales
+                    </span>
+
+                    <a
+                        class="map-button"
+                        href="https://www.google.com/maps/search/?api=1&query=San+Nicolas+de+Tolentino+Parish+Castillejos+Zambales"
+                        target="_blank"
+                        rel="noopener"
+                    >
+                        📍 VIEW MAP
+                    </a>
+
+                </div>
+            </div>
+
+
+            <div class="event-row">
+                <span class="event-icon">🏀</span>
+
+                <div>
+                    <small>BIRTHDAY VENUE</small>
+
+                    <strong>
+                        Del Pilar
+                    </strong>
+
+                    <span>
+                        Castillejos, Zambales
+                    </span>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         COUNTDOWN
+    ================================================== -->
+
+    <section class="countdown-section reveal">
+
+        <p class="eyebrow">THE GAME BEGINS</p>
+
+        <h2 class="section-title">
+            COUNTDOWN
+        </h2>
+
+        <div class="countdown">
+
+            <div class="count-box">
+                <span id="days">00</span>
+                <small>DAYS</small>
+            </div>
+
+            <div class="count-box">
+                <span id="hours">00</span>
+                <small>HOURS</small>
+            </div>
+
+            <div class="count-box">
+                <span id="minutes">00</span>
+                <small>MINUTES</small>
+            </div>
+
+            <div class="count-box">
+                <span id="seconds">00</span>
+                <small>SECONDS</small>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GAME RULES / REMINDERS
+    ================================================== -->
+
+    <section class="portrait-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">
+            A FEW FRIENDLY REMINDERS
+        </p>
+
+        <h2 class="section-title">
+            GAME RULES
+        </h2>
+
+
+        <div class="rules-list">
+
+            <div class="rule">
+                <span>🚭</span>
+                <H3>NO SMOKING</H3>
+                <p>
+                    Smoking E-Cigars and Cigars are not allowed, you can go home immediately if you want!
+                </p>
+            </div>
+
+            <div class="rule">
+                <span>🤒</span>
+                <H3>FEELING UNWELL</H3>
+                <p>
+                    Kindly wear a mask and avoid physical/close contact with BRYCE.
+                </p>
+            </div>
+            <div class="rule">
+                <span>🧴👐</span>
+                <h3>KEEP CLEAN</h3>
+                <p>
+                    Please sanitize your hands first before touching BRYCE.
+                </p>
+            </div>
+<div class="rule">
+                <span>💋🚫</span>
+                <h3>NO KISSING</h3>
+                <p>
+                    Kindly avoid kissing BRYCE on the face and hands.
+                </p>
+            </div>
+            <div class="rule">
+                <span>📸</span>
+                <h3>CAPTURE MEMORIES</h3>
+                <p>
+                Bring your smiles and cameras!
+                </p>
+            </div>
+
+            <div class="rule">
+                <span>🧡</span>
+                <h3>ENJOY</h3>
+                <p>
+                    Most importantly, have fun and celebrate
+                    with Bryce!
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         DRESS CODE
+    ================================================== -->
+
+    <section class="portrait-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">SHOW UP IN STYLE</p>
+
+        <h2 class="section-title">
+            DRESS CODE
+        </h2>
+
+        <p class="dress-description">
+            BLACK • CREAM • WHITE • ALL SHADES OF ORANGE
+        </p>
+
+
+        <div class="orange-palette">
+
+            <div class="dress-color black">
+                <span>BLACK</span>
+            </div>
+
+            <div class="dress-color cream">
+                <span>CREAM</span>
+            </div>
+ 
+            <div class="dress-color cream">
+                <span>WHITE</span>
+            </div>
+
+            <div class="dress-color orange-light">
+                <span>PEACH</span>
+            </div>
+
+            <div class="dress-color orange-soft">
+                <span>LIGHT ORANGE</span>
+            </div>
+
+            <div class="dress-color orange">
+                <span>ORANGE</span>
+            </div>
+
+            <div class="dress-color orange-dark">
+                <span>DARK ORANGE</span>
+            </div>
+
+            <div class="dress-color burnt">
+                <span>BURNT ORANGE</span>
+            </div>
+
+        </div>
+
+        <div class="dress-number">
+            #26
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         GIFT GUIDE
+    ================================================== -->
+
+    <section class="portrait-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">
+            YOUR PRESENCE IS ENOUGH
+        </p>
+
+        <h2 class="section-title">
+            GIFT GUIDE
+        </h2>
+
+        <div class="gift-card">
+
+            <div class="gift-icon">
+                🎁
+            </div>
+
+            <p>
+                Your presence is already the greatest gift.
+            </p>
+
+            <p>
+                If you would like to give something,
+                here are a few ideas:
+            </p>
+
+            <div class="gift-items">
+
+                <span>💰 MONETARY GIFT— FOR BRYCE'S FUTURE NEEDS</span>
+                <span>🧷 DIAPER — SIZE L - EQ PANTS</span>
+                <span>🛀🏻 BATH WASH AND SHAMPOO — CETAPHIL </span>
+                <span>👔 CUTE OUTFITS — CASUAL SETS, POLO SHIRTS & SUSPENDER SETS</span>
+                <span>🧸 PLUSH TOYS — SOFT & BABY-SAFE STUFFED ANIMALS</span>
+                <span>🧢 BOY ACCESSORIES — CAPS, HATS, SUNGLASSES, SOCKS</span>
+                
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         NINONGS AND NINANGS
+    ================================================== -->
+
+    <section class="portrait-section sponsors-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">
+            SPECIAL PEOPLE IN BRYCE'S JOURNEY
+        </p>
+
+        <h2 class="section-title">
+            GODPARENTS
+        </h2>
+
+
+        <div class="godparent-columns">
+
+
+            <!-- NINANGS -->
+
+            <div class="godparent-group">
+
+                <h3>⛹🏻‍♀️ NINANGS</h3>
+
+                <ol>
+
+                    <li>Ninang Bianca</li>
+                    <li>Ninang Tifa</li>
+                    <li>Ninang Aila</li>
+                    <li>Ninang Alliyah</li>
+                    <li>Ninang Anne</li>
+                    <li>Ninang Jessel</li>
+                    <li>Ninang Jasmine</li>
+                    <li>Ninang Jonalyn</li>
+                    <li>Ninang Odrae</li>
+                    <li>Ninang Kim</li>
+                    <li>Ninang Althea</li>
+                    <li>Ninang Marie</li>
+                    <li>Ninang Mhica</li>
+                    <li>Ninang Chyna</li>
+
+                </ol>
+
+            </div>
+
+
+            <!-- NINONGS -->
+
+            <div class="godparent-group">
+
+                <h3>⛹🏻 NINONGS</h3>
+
+                <ol>
+
+                    <li>Ninong Andrei</li>
+                    <li>Ninong Daniel</li>
+                    <li>Ninong Kevin</li>
+                    <li>Ninong AL</li>
+                    <li>Ninong MJ</li>
+                    <li>Ninong Ken</li>
+                    <li>Ninong Joshua B.</li>
+                    <li>Ninong Mharc</li>
+                    <li>Ninong Rhed</li>
+                    <li>Ninong Carl P.</li>
+                    <li>Ninong Justin</li>
+                    <li>Ninong Dexter</li>
+                    <li>Ninong Carl E.</li>
+                    <li>Ninong Vincent</li>
+                    <li>Ninong Joshua E.</li>
+
+                </ol>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         PHOTO GALLERY
+    ================================================== -->
+
+    <section class="portrait-section gallery-section reveal">
+
+        <div class="section-number">#26</div>
+
+        <p class="eyebrow">
+            OUR FAVORITE MOMENTS
+        </p>
+
+        <h2 class="section-title">
+            PHOTO GALLERY
+        </h2>
+
+        <p class="gallery-description">
+            Six special memories of our little MVP.
+        </p>
+
+
+        <div class="gallery">
+
+
+            <!-- PHOTO 1 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic1.jpg"
+                    alt="Bryce photo 1"
+                >
+            </div>
+
+
+            <!-- PHOTO 2 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic2.jpg"
+                    alt="Bryce photo 2"
+                >
+            </div>
+
+
+            <!-- PHOTO 3 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic3.jpg"
+                    alt="Bryce photo 3"
+                >
+            </div>
+
+
+            <!-- PHOTO 4 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic4.jpg"
+                    alt="Bryce photo 4"
+                >
+            </div>
+
+
+            <!-- PHOTO 5 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic 5.jpg"
+                    alt="Bryce photo 5"
+                >
+            </div>
+
+
+            <!-- PHOTO 6 -->
+
+            <div class="gallery-photo">
+                <img
+                    src="pic6.jpg"
+                    alt="Bryce photo 6"
+                >
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+    <!-- =================================================
+         RSVP
+    ================================================== -->
+
+    <section class="rsvp-section reveal">
+
+        <div class="rsvp-ball">
+            <span>26</span>
+        </div>
+
+        <p class="eyebrow">
+            SAVE YOUR SPOT
+        </p>
+
+        <h2 class="section-title">
+            RSVP
+        </h2>
+
+        <p>
+            Please let us know if you can join Bryce
+            for his special day!
+        </p>
+
+        <button id="rsvpButton" class="primary-button">
+            🏀 TAP TO RSVP
+        </button>
+
+    </section>
+
+
+
+    <!-- =================================================
+         FOOTER
+    ================================================== -->
+
+    <footer>
+
+        <div class="footer-ball">
+            #26
+        </div>
+
+        <h2>
+            SEE YOU ON GAME DAY!
+        </h2>
+
+        <p>
+            BRYCE BIRTHDAY & CHRISTENING
+        </p>
+
+        <p>
+            OCTOBER 24, 2026 • 11:00 AM
+        </p>
+
+    </footer>
+
+</main>
+
+
+
+<!-- =====================================================
+     RSVP MODAL
+===================================================== -->
+
+<div id="rsvpModal" class="modal">
+
+    <div class="modal-content">
+
+        <button
+            id="closeRsvp"
+            class="close-button"
+            aria-label="Close RSVP"
+        >
+            ×
+        </button>
+
+        <div class="modal-ball">
+            #26
+        </div>
+
+        <h2>
+            RSVP
+        </h2>
+
+        <p>
+            Please complete the RSVP form.
+        </p>
+
+        <!--
+            ==================================================
+            PUT YOUR GOOGLE FORM LINK HERE
+            ==================================================
+            
+            Replace the URL below with your actual Google
+            Form link.
+        -->
+
+        <a
+            href="https://forms.gle/XmAtN3X8gL1DmZEC6"
+            target="_blank"
+            rel="noopener"
+            class="primary-button"
+        >
+            OPEN RSVP FORM
+        </a>
+
+    
+
+
+<script src="script.js"></script>
+
+</body>
+</html>
